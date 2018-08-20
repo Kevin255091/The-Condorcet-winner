@@ -5,5 +5,5 @@
 It is not a Condorcet Winner.
 1
 1 2
-3.85 3 4
-7 5 5
+3.85 3 4 0
+7 5 5 1

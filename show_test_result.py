@@ -40,13 +40,13 @@ with open(filename) as f:
     line = f.readline().rstrip('\n')
     if line == "It is not envy-free." :
         result = "nonEnvyFree"
-        voter_index, facility_index = [int(x) for x in f.readline().split()]
+        voter_index, facility_index = (int(x) for x in f.readline().split())
     if line == "It is a Condorcet Winner." :
         result = "CondorcetWinner"
     if line == "It is not a Condorcet Winner." :
         result = "simpleRival"
         max_margin = int(f.readline())
-        j, h = [int(x) for x in f.readline().split()]
+        j, h = (int(x) for x in f.readline().split())
         count = h-j+1
         i = 0
         for line in f:
